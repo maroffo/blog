@@ -10,8 +10,6 @@ cover:
   relative: false
 ---
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*pumWjXJFP4IkQzPLDDGjVQ.png)
-
 ## Introduzione
 
 L’intelligenza artificiale (IA) sta cambiando il modo in cui accediamo all’informazione. In questo contesto, DeepSeek ha catturato l’attenzione del settore tecnologico per le sue capacità di ragionamento e per l’efficienza economica del suo sviluppo, con costi di training pari a circa 1/20 rispetto ai competitor.

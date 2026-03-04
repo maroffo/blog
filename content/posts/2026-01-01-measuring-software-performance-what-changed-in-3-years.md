@@ -10,8 +10,6 @@ cover:
   relative: false
 ---
 
-![](https://cdn-images-1.medium.com/max/1600/1*ev7Jfe14WsdW_g3FX_tMjw.jpeg)
-
 Three years ago, in January 2023, I published an article titled [_"Measuring and Improving Performance in Software Development."_]({{< ref "2023-01-09-measuring-and-improving-performance-in-software-development" >}}) At the time, I analyzed the difficulty of defining productivity, citing frameworks like SPACE and exploring the link between developer satisfaction and performance.
 
 Re-reading that analysis today, I realize that three years in our industry is a geological era. When I wrote that piece, ChatGPT had just been released to the public, GitHub Copilot was in its infancy, and the concept of _Developer Experience_ (DevEx) was still a niche topic compared to pure DevOps metrics.

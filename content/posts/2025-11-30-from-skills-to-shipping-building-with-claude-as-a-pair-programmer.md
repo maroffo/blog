@@ -10,8 +10,6 @@ cover:
   relative: false
 ---
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*mggsFy2HkIuchlC-g7JieA.jpeg)
-
 ## The automation continues
 
 **The result:** Two half-days of work. 101 tests. Zero API tokens shared with third parties. Full control over our automation.
