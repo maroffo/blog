@@ -2,7 +2,8 @@ baseURL = "https://maroffo.github.io/blog/"
 languageCode = "en-us"
 title = "Maroffo"
 theme = "PaperMod"
-paginate = 10
+[pagination]
+  pagerSize = 10
 
 [params]
   author = "Maroffo"
