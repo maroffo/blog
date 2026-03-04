@@ -1,0 +1,15 @@
+# ABOUTME: Hugo child theme metadata for PaperMod + Nur color palette
+# ABOUTME: Requires PaperMod as parent theme in Hugo theme composition
+
+name = "PaperMod Nur"
+license = "MIT"
+licenselink = "https://github.com/maroffo/hugo-theme-papermod-nur/blob/main/LICENSE"
+description = "Nur color palette and Literata typography for Hugo PaperMod"
+homepage = "https://github.com/maroffo/hugo-theme-papermod-nur"
+tags = ["blog", "papermod", "nur", "typography", "color-scheme"]
+features = ["dark mode", "syntax highlighting", "serif typography"]
+min_version = "0.112.0"
+
+[author]
+  name = "Maroffo"
+  homepage = "https://github.com/maroffo"

@@ -1,0 +1,48 @@
+/* ABOUTME: Nur palette mapped to PaperMod CSS variables (light + dark)
+   ABOUTME: Overrides theme-vars.css via cascade (extended/ loads after core/) */
+
+:root {
+    --theme: #f0e7d4;             /* warm cream (matches list bg) */
+    --entry: #f0e7d4;
+    --primary: #5a5e6b;           /* Basalto */
+    --secondary: #5a6a4d;         /* Ulivo Profondo */
+    --tertiary: #d4c7a4;
+    --content: #5a5e6b;           /* Basalto */
+    --code-block-bg: #23272b;     /* Ossidiana - always dark */
+    --code-bg: #f0e7d4;
+    --border: #d4c7a4;
+
+    /* Nur accent palette */
+    --nur-accent: #fc7261;        /* Corallo */
+    --nur-link: #9d80b7;          /* Lavanda */
+    --nur-link-hover: #6fa3d2;    /* Turchese */
+    --nur-blockquote: #5a6a4d;    /* Ulivo Profondo */
+    --nur-selection: #8ebdb6;     /* Laguna */
+    --nur-tag-bg: #f0e7d4;
+}
+
+:root[data-theme="dark"] {
+    --theme: #23272b;             /* Ossidiana */
+    --entry: #1d2024;
+    --primary: #e2dbc4;           /* Orbace */
+    --secondary: #6e7f5c;         /* Ulivo */
+    --tertiary: #3a4540;
+    --content: #e2dbc4;           /* Orbace */
+    --code-block-bg: #23272b;     /* Ossidiana - always dark */
+    --code-bg: #1d2024;
+    --border: #3a4540;
+
+    /* Nur accent palette (dark) */
+    --nur-accent: #fc7261;        /* Corallo */
+    --nur-link: #9d80b7;          /* Lavanda */
+    --nur-link-hover: #6fa3d2;    /* Turchese */
+    --nur-blockquote: #6e7f5c;    /* Ulivo */
+    --nur-selection: #8ebdb6;     /* Laguna */
+    --nur-tag-bg: #1d2024;
+}
+
+/* Selection highlight */
+::selection {
+    background: var(--nur-selection);
+    color: var(--primary);
+}

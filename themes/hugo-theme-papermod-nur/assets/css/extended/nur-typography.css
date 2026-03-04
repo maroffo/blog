@@ -1,0 +1,22 @@
+/* ABOUTME: Literata serif for post body, Inter sans-serif for headings/nav/UI
+   ABOUTME: Fonts loaded via extend_head.html with display=swap */
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+.post-content {
+    font-family: 'Literata', 'Georgia', 'Times New Roman', serif;
+    line-height: 1.7;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}

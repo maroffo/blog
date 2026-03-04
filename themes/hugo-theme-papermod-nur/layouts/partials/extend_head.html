@@ -1,0 +1,34 @@
+{{- /* ABOUTME: Google Fonts loader for Literata + Inter, plus noscript dark mode fallback */}}
+{{- /* ABOUTME: Overrides PaperMod's empty extend_head.html via theme composition */}}
+
+{{- /* Preconnect to Google Fonts */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+{{- /* Load Literata (body) and Inter (headings/UI) */}}
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Literata:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+{{- /* Noscript: Nur dark mode variables (overrides PaperMod's noscript via cascade) */}}
+<noscript>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: #23272b;
+                --entry: #1d2024;
+                --primary: #e2dbc4;
+                --secondary: #6e7f5c;
+                --tertiary: #3a4540;
+                --content: #e2dbc4;
+                --code-block-bg: #23272b;
+                --code-bg: #1d2024;
+                --border: #3a4540;
+                --nur-accent: #fc7261;
+                --nur-link: #9d80b7;
+                --nur-link-hover: #6fa3d2;
+                --nur-blockquote: #6e7f5c;
+                --nur-selection: #8ebdb6;
+                --nur-tag-bg: #1d2024;
+            }
+        }
+    </style>
+</noscript>

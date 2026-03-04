@@ -1,0 +1,74 @@
+/* ABOUTME: Nur accent colors for links, blockquotes, tags, buttons, code blocks
+   ABOUTME: Uses --nur-* custom properties defined in nur-variables.css */
+
+/* Links */
+.post-content a {
+    color: var(--nur-link);
+}
+
+.post-content a:hover {
+    color: var(--nur-link-hover);
+}
+
+/* Blockquotes */
+.post-content blockquote {
+    border-left: 3px solid var(--nur-accent);
+    color: var(--nur-blockquote);
+    font-style: italic;
+}
+
+/* Active nav underline */
+.menu a.active {
+    border-bottom: 2px solid var(--nur-accent);
+}
+
+/* Tag pills */
+.post-tags a {
+    background: var(--nur-tag-bg);
+    color: var(--secondary);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 2px 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.post-tags a:hover {
+    background: var(--nur-accent);
+    color: #fff;
+    border-color: var(--nur-accent);
+}
+
+/* Back to top button */
+.top-link {
+    background: var(--nur-accent);
+    color: #fff;
+}
+
+.top-link:hover {
+    background: var(--nur-link-hover);
+}
+
+/* Code block foreground */
+.highlight pre,
+.highlight pre code {
+    color: #e2dbc4; /* Orbace */
+}
+
+/* Code block scrollbar */
+.highlight pre::-webkit-scrollbar-thumb {
+    background: #6e7f5c; /* Ulivo */
+}
+
+.highlight pre::-webkit-scrollbar-thumb:hover {
+    background: #8ebdb6; /* Laguna */
+}
+
+/* Footer links */
+.footer a:hover {
+    color: var(--nur-link-hover);
+}
+
+/* Social icons hover */
+.social-icons a:hover svg {
+    fill: var(--nur-accent);
+}
