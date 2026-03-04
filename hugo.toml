@@ -1,0 +1,82 @@
+baseURL = "https://maroffo.github.io/blog/"
+languageCode = "en-us"
+title = "Maroffo"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  author = "Maroffo"
+  description = "Engineering leadership meets hands-on code. AI-assisted development, cloud architecture, performance optimization."
+  defaultTheme = "auto"
+  showReadingTime = true
+  showShareButtons = false
+  showPostNavLinks = true
+  showBreadCrumbs = true
+  showCodeCopyButtons = true
+  showToc = true
+  tocOpen = false
+
+  [params.homeInfoParams]
+    title = "Hi, I'm Maroffo"
+    content = "Engineering leader turned hands-on builder. Writing about AI-assisted development, cloud architecture, and performance optimization."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/maroffo"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/maroffo/"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/blog/index.xml"
+
+[params.cover]
+  hiddenInList = false
+  hiddenInSingle = false
+
+[params.editPost]
+  disabled = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[menu]
+  [[menu.main]]
+    identifier = "archive"
+    name = "Archive"
+    url = "/archives/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
+
+[permalinks]
+  posts = "/posts/:contentbasename/"
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+    codeFences = true
+    guessSyntax = true
+
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
