@@ -199,4 +199,4 @@ PHB said five words. Andrea said three ("what about UAT?"). They turned into 115
 
 ---
 
-*Massimiliano Aroffo is a Cloud Engineer and Architect at Wishew, where he builds infrastructure automation and has now written three articles about optimizing the AI system that helps him build infrastructure automation. The recursion is becoming a feature.*
+*Massimiliano Aroffo is a Principal Software Engineer at [HikmaAI](https://hikmaai.io/) and Cloud Engineer and Architect at [Wishew](https://wishew.com/), where he builds infrastructure automation and has now written three articles about optimizing the AI system that helps him build infrastructure automation. The recursion is becoming a feature.*

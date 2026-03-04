@@ -178,4 +178,4 @@ The recursion from the previous article's bio line? It's now three levels deep. 
 
 ---
 
-*Massimiliano Aroffo is a Cloud Engineer and Architect at Wishew, where he builds infrastructure automation with an AI system that now has a memory, opinions about what it's learned, and a process for turning those opinions into permanent knowledge.*
+*Massimiliano Aroffo is a Principal Software Engineer at [HikmaAI](https://hikmaai.io/) and Cloud Engineer and Architect at [Wishew](https://wishew.com/), where he builds infrastructure automation with an AI system that now has a memory, opinions about what it's learned, and a process for turning those opinions into permanent knowledge.*

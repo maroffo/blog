@@ -51,7 +51,7 @@ The study calls this the **"skill tax"**: a 17% learning penalty that applies re
 
 The pattern analysis tells you where the split happens. Developers who scored well (65-86%) even with AI used it for *explanations* alongside code: "explain this concurrency model," "why does Trio handle cancellation this way?" Developers who scored poorly (24-39%) delegated heavily, pasting outputs without engaging with the reasoning. Some spent 11 minutes out of a 30-minute task window just interacting with the assistant.
 
-These aren't abstract statistics. I recognized myself in those patterns. When I'm working in Go, a language I know deeply after years at Wishew, I use Claude Code as a power tool. I challenge its suggestions, I know when it's wrong, I can evaluate trade-offs. But when I dabbled in a new framework recently, I caught myself doing exactly what the low-scoring group did: accepting outputs, moving fast, feeling productive. The AI Perception Gap I wrote about in January goes deeper than speed. It's about mistaking *output* for *learning*.
+These aren't abstract statistics. I recognized myself in those patterns. When I'm working in Go, a language I know deeply, I use Claude Code as a power tool. I challenge its suggestions, I know when it's wrong, I can evaluate trade-offs. But when I dabbled in a new framework recently, I caught myself doing exactly what the low-scoring group did: accepting outputs, moving fast, feeling productive. The AI Perception Gap I wrote about in January goes deeper than speed. It's about mistaking *output* for *learning*.
 
 Now think about your junior developers. If they're using AI for 75% of their work (which, per the Pragmatic Engineer survey, many are), and if the Anthropic study's findings generalize, they may be producing code at an acceptable rate while building conceptual understanding 17% slower than they would otherwise. That compounds. Over months and years, it becomes a structural deficit in your team's capability.
 
@@ -77,7 +77,7 @@ And warm referrals have become the highest-signal filter, because they're the on
 
 This connects directly back to Fracture 1. If AI makes engineers learn slower (the skill tax), and AI also makes it harder to detect that slower learning (compromised assessments), you have a feedback loop. You hire people who look competent on paper, who produce acceptable code, but who lack the deep understanding that surfaces when things go wrong. And in software, things always go wrong.
 
-I'll be honest: at Wishew, we're a small team, and our hiring process is informal enough that this hasn't bitten us yet. But I've been on the other side of this equation many times in my career as CTO and VP Engineering, hiring hundreds of engineers. Looking back, about half of the evaluation methods I relied on would be useless today. That's a sobering thought.
+I'll be honest: at HikmaAI, we're a small team, and our hiring process is informal enough that this hasn't bitten us yet. But I've been on the other side of this equation many times in my career as CTO and VP Engineering, hiring hundreds of engineers. Looking back, about half of the evaluation methods I relied on would be useless today. That's a sobering thought.
 
 ***
 
@@ -95,7 +95,7 @@ And it compounds. The developer who uses AI well builds better mental models, le
 
 "AGI is already here," Romero writes, "it's just not evenly distributed." The difference isn't whether you use AI. It's *how*.
 
-I see this at Wishew too, though on a smaller scale. I've spent months building [modular skills]({{< ref "2025-11-09-from-asking-claude-to-code-to-teaching-claude-our-patterns-building-modular-ai-skills" >}}), quality gates, and review pipelines for how I work with Claude Code. When I watch someone else use the same tool without that scaffolding, it's like watching someone use Excel for its calculator function and never discovering pivot tables. Same software, completely different results.
+I see this at HikmaAI and Wishew too, though on a smaller scale. I've spent months building [modular skills]({{< ref "2025-11-09-from-asking-claude-to-code-to-teaching-claude-our-patterns-building-modular-ai-skills" >}}), quality gates, and review pipelines for how I work with Claude Code. When I watch someone else use the same tool without that scaffolding, it's like watching someone use Excel for its calculator function and never discovering pivot tables. Same software, completely different results.
 
 ***
 
@@ -119,7 +119,7 @@ Don't skip layers.
 
 ### What I'm doing about it
 
-I don't have this figured out. But after 25 years building engineering teams and now being back in the trenches writing Go at Wishew, here's where I've landed.
+I don't have this figured out. But after 25 years building engineering teams and now being back in the trenches writing Go at HikmaAI and Wishew, here's where I've landed.
 
 On the skill tax: I've started distinguishing between what Anthropic calls "performance tasks" and "learning tasks." When I'm working in Go, AWS, CI/CD (domains I know well), I let Claude Code run freely. But when I'm learning something new, I force myself to slow down. I ask for explanations, not implementations. I deliberately debug before asking AI for help. It feels slower because it *is* slower. That's the point.
 
