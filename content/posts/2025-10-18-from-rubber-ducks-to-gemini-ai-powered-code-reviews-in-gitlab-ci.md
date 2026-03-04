@@ -10,7 +10,7 @@ cover:
   relative: false
 ---
 
-In my [previous article](https://medium.com/p/45c262f6d9dc), I shared how we built an ECS deployment notification system. That was one of the first steps in my return to hands-on infrastructure work at Wishew, with the goal of improving automation processes. But notifications are just the beginning. The real objective is to create a development ecosystem that is as efficient, consistent, and automated as possible, allowing the team to focus on what truly matters: writing quality code.
+In my [previous article](/blog/posts/2025-10-03-building-a-smart-ecs-deployment-notifier-with-aws-lambda-gitlab-and-slack/), I shared how we built an ECS deployment notification system. That was one of the first steps in my return to hands-on infrastructure work at Wishew, with the goal of improving automation processes. But notifications are just the beginning. The real objective is to create a development ecosystem that is as efficient, consistent, and automated as possible, allowing the team to focus on what truly matters: writing quality code.
 
 Now, I want to share another chapter in this journey: how we transformed our GitLab CI pipelines from simple build and test runners into true development assistants, using reusable templates and, most importantly, integrating a code reviewer based on Google’s Gemini AI.
 

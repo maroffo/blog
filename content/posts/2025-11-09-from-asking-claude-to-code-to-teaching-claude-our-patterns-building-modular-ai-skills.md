@@ -12,7 +12,7 @@ cover:
 
 ## Back to the trenches (again)
 
-In my [previous articles](https://maroffo.medium.com/), I shared how returning to an Individual Contributor role at Wishew after years as CTO has been refreshing. I’ve been building infrastructure automation, deployment notifiers, and AI-powered code reviews; real, hands-on technical work that I genuinely missed.
+In my [previous articles](/blog/archives/), I shared how returning to an Individual Contributor role at Wishew after years as CTO has been refreshing. I’ve been building infrastructure automation, deployment notifiers, and AI-powered code reviews; real, hands-on technical work that I genuinely missed.
 
 But here’s what I didn’t anticipate: I’d spend as much time teaching an AI how to code as I would actually coding.
 

@@ -14,7 +14,7 @@ cover:
 
 **The result:** Two half-days of work. 101 tests. Zero API tokens shared with third parties. Full control over our automation.
 
-In my [previous articles](https://maroffo.medium.com/), I’ve shared different pieces of our automation journey at Wishew: ECS deployment notifications, AI-powered code reviews with Gemini, [modular AI skills](https://medium.com/@maroffo/from-asking-claude-to-code-to-teaching-claude-our-patterns-building-modular-ai-skills-83680a2e3708) for Claude Code. The underlying goal is always the same: **eliminate friction from the software development process**.
+In my [previous articles](/blog/archives/), I’ve shared different pieces of our automation journey at Wishew: ECS deployment notifications, AI-powered code reviews with Gemini, [modular AI skills](/blog/posts/2025-11-09-from-asking-claude-to-code-to-teaching-claude-our-patterns-building-modular-ai-skills/) for Claude Code. The underlying goal is always the same: **eliminate friction from the software development process**.
 
 This time, I want to share the story of **ClickLab**: a tool I built to replace a third-party service I didn’t trust with our GitLab and ClickUp API tokens.
 
@@ -47,7 +47,7 @@ The Lambda watches ClickUp for status changes; the CI template runs in our exist
 
 ClickLab is a serverless Lambda that creates GitLab branches when ClickUp tasks move to the configured trigger status.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*yfO0CyGkFB7FLM2aZdHvwA.jpeg)
+![](/blog/images/skills-to-shipping-workflow.jpeg)
 
 **Key features:**
 
@@ -439,9 +439,9 @@ And a special thanks to the ClickUp and GitLab teams for excellent API documenta
 
 **Referenced Articles:**
 
-* [Building Modular AI Skills](https://medium.com/@maroffo/from-asking-claude-to-code-to-teaching-claude-our-patterns-building-modular-ai-skills-83680a2e3708): The skills system explained
-* [From Rubber Ducks to Gemini](https://maroffo.medium.com/from-rubber-ducks-to-gemini-ai-powered-code-reviews-in-gitlab-ci-a1bc44309c21): AI-powered code reviews
-* [Smart ECS Deployment Notifier](https://maroffo.medium.com/building-a-smart-ecs-deployment-notifier-with-aws-lambda-gitlab-and-slack-45c262f6d9dc): Another automation project
+* [Building Modular AI Skills](/blog/posts/2025-11-09-from-asking-claude-to-code-to-teaching-claude-our-patterns-building-modular-ai-skills/): The skills system explained
+* [From Rubber Ducks to Gemini](/blog/posts/2025-10-18-from-rubber-ducks-to-gemini-ai-powered-code-reviews-in-gitlab-ci/): AI-powered code reviews
+* [Smart ECS Deployment Notifier](/blog/posts/2025-10-03-building-a-smart-ecs-deployment-notifier-with-aws-lambda-gitlab-and-slack/): Another automation project
 
 **Methodologies:**
 

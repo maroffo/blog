@@ -20,7 +20,7 @@ The Italian prison system is in a perpetual state of crisis. Overcrowding at 130
 
 I wanted to build that synthesis. And I wanted to see how far I could push AI-assisted development on a real, non-trivial project.
 
-My previous articles covered pieces of this journey at Wishew: [modular AI skills](https://medium.com/@maroffo/from-asking-claude-to-code-to-teaching-claude-our-patterns-building-modular-ai-skills-83680a2e3708), [AI-powered code reviews](https://maroffo.medium.com/from-rubber-ducks-to-gemini-ai-powered-code-reviews-in-gitlab-ci-a1bc44309c21), [building with Claude as a pair programmer](https://medium.com/@maroffo/from-skills-to-shipping-building-with-claude-as-a-pair-programmer-d1ec11eb1c3c). BehindBarsPulse is the next chapter: a personal project where I applied everything I'd learned about AI collaboration, but with no team to fall back on. Just me, Claude Code, and a blank repository.
+My previous articles covered pieces of this journey at Wishew: [modular AI skills](/blog/posts/2025-11-09-from-asking-claude-to-code-to-teaching-claude-our-patterns-building-modular-ai-skills/), [AI-powered code reviews](/blog/posts/2025-10-18-from-rubber-ducks-to-gemini-ai-powered-code-reviews-in-gitlab-ci/), [building with Claude as a pair programmer](/blog/posts/2025-11-30-from-skills-to-shipping-building-with-claude-as-a-pair-programmer/). BehindBarsPulse is the next chapter: a personal project where I applied everything I'd learned about AI collaboration, but with no team to fall back on. Just me, Claude Code, and a blank repository.
 
 ## From editorial problem to technical requirements
 
@@ -415,9 +415,9 @@ That's worth something.
 
 **Referenced Articles:**
 
-* [Building Modular AI Skills](https://medium.com/@maroffo/from-asking-claude-to-code-to-teaching-claude-our-patterns-building-modular-ai-skills-83680a2e3708): The skills system
-* [From Skills to Shipping](https://medium.com/@maroffo/from-skills-to-shipping-building-with-claude-as-a-pair-programmer-d1ec11eb1c3c): Claude as pair programmer
-* [From Rubber Ducks to Gemini](https://maroffo.medium.com/from-rubber-ducks-to-gemini-ai-powered-code-reviews-in-gitlab-ci-a1bc44309c21): AI code reviews
+* [Building Modular AI Skills](/blog/posts/2025-11-09-from-asking-claude-to-code-to-teaching-claude-our-patterns-building-modular-ai-skills/): The skills system
+* [From Skills to Shipping](/blog/posts/2025-11-30-from-skills-to-shipping-building-with-claude-as-a-pair-programmer/): Claude as pair programmer
+* [From Rubber Ducks to Gemini](/blog/posts/2025-10-18-from-rubber-ducks-to-gemini-ai-powered-code-reviews-in-gitlab-ci/): AI code reviews
 
 ***
 
