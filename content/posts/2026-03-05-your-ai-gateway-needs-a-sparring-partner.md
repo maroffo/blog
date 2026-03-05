@@ -14,7 +14,7 @@ A few weeks ago, a post went viral on LinkedIn claiming promptfoo is "the most u
 
 I agree with the premise. I disagree with the framing.
 
-At HikmaAI, we've been building [Mirsad](https://github.com/hikmaai-io/hikma-mirsad), a runtime AI security gateway that sits between your application and the LLM provider. It analyzes every request and response in real time: prompt injection, toxicity, PII, jailbreak detection, all under 5ms. When I saw the promptfoo hype, my first reaction was defensive. Are we missing something? Should we be worried? I spent a week going through promptfoo's codebase, docs, and enterprise offering, expecting to find overlap.
+At HikmaAI, we've been building [Mirsad](https://github.com/hikmaai-io/hikma-mirsad), a runtime AI security gateway that sits between your application and the LLM provider. It analyzes every request and response in real time: prompt injection, toxicity, PII, jailbreak detection. The pattern-matching detectors add under 5ms; the ML classifier (DeBERTa v3 via ONNX) adds 10-20ms depending on sequence length and hardware. When I saw the promptfoo hype, my first reaction was defensive. Are we missing something? Should we be worried? I spent a week going through promptfoo's codebase, docs, and enterprise offering, expecting to find overlap.
 
 What I found instead: promptfoo and Mirsad aren't competitors. They solve different halves of a problem most teams only address half of.
 
@@ -31,7 +31,7 @@ Here's the mental model I keep coming back to.
 
 Pre-production evaluation tells you *what to expect*. Production security tells you *what actually happened*. They feed each other, and neither works well alone.
 
-If you've ever had to explain to a junior why you need both unit tests and production monitoring, this is the same conversation. Nobody argues you should pick one or the other for testing. But with AI security, most teams do exactly that.
+It's the same reason we don't choose between unit tests and production monitoring. We use both, because they catch different things. But with AI security, most teams pick one and call it done.
 
 ***
 
@@ -43,13 +43,13 @@ That last one matters if you're in Europe. Which, given the AI Act's extraterrit
 
 For model selection, it does benchmarking, A/B comparison, and assertion-based testing. If you're picking between GPT-4o, Claude Sonnet, and Gemini Pro for a specific use case, promptfoo gives you structured data instead of vibes.
 
-What it doesn't do: run in production. promptfoo Enterprise added runtime guardrails recently, but they're LLM-based, 200-500ms latency per check. At HikmaAI, our privacy contract requires stateless analysis under 5ms. That's a 100x gap, and it's not a tuning problem; it's an architecture choice. LLM-as-judge is thorough but slow. Pattern matching and lightweight ML classifiers are fast but narrower. Different constraints, different tools.
+What it doesn't do: run in production. promptfoo Enterprise added runtime guardrails recently, but they rely on LLM-as-judge, which typically adds hundreds of milliseconds per check. At HikmaAI, our privacy contract requires stateless analysis at single-digit to low-double-digit millisecond latency. That's an order-of-magnitude gap, and it's not a tuning problem; it's an architecture choice. LLM-as-judge is thorough but slow. Pattern matching and lightweight ML classifiers are fast but narrower. Different constraints, different tools.
 
 ***
 
 ### What Mirsad does differently
 
-Mirsad is a reverse proxy. Sits in the request path, analyzes input and output, decides in real time: block, alert, or pass through. Raw text never appears in telemetry (privacy contract), and the round-trip cost is under 5ms.
+Mirsad is a reverse proxy. Sits in the request path, analyzes input and output, decides in real time: block, alert, or pass through. Raw text never appears in telemetry (privacy contract). The pattern-matching detectors (regex, keyword, policy) add under 5ms; the DeBERTa classifier adds 10-20ms when the ONNX build is enabled. Builds without CGO skip the ML model entirely and rely on pattern matching only.
 
 Seven detectors run in parallel on every request:
 
@@ -73,7 +73,7 @@ Then there's the observability layer, which is where things get interesting for 
 
 The two loops aren't independent. They should feed each other, and this is the part I rarely see discussed.
 
-promptfoo → Mirsad: red-teaming discovers your model is vulnerable to a specific injection pattern (say, ASCII smuggling via Unicode homoglyphs). You add a detection rule to Mirsad so that pattern gets caught in production, even when an attacker crafts a variant your test suite didn't cover.
+promptfoo → Mirsad: red-teaming discovers your model is vulnerable to a specific injection pattern (say, ASCII smuggling via Unicode homoglyphs). You add a regex to Mirsad's jailbreak detector, or compile a new policy plugin, so that pattern gets caught in production, even when an attacker crafts a variant your test suite didn't cover.
 
 Mirsad → promptfoo: production telemetry shows model X has a 3x higher jailbreak attempt rate than model Y for the same use case. That's a signal to re-evaluate your model choice, and promptfoo is the tool that does that evaluation with structure.
 
@@ -112,8 +112,9 @@ From what I've seen talking to other teams, most fall into one of these:
 | Optimists | None | None | Everything |
 | Testers | promptfoo / manual red-team | None | Novel attacks, model drift, cost blowups |
 | Watchers | None | Basic rate limiting | Untested models, known vulnerabilities |
+| Closed-loop | Red-team + regression suite | Gateway + observability | Edge cases (the healthy kind) |
 
-The goal is to have both columns filled. Easier said than done, obviously, but the first step is knowing which column you're empty on. If you're a Tester, add a production gateway. If you're a Watcher, run a red-team exercise once. Either move is more useful than perfecting the half you already have.
+The goal is that last row. Easier said than done, obviously, but the first step is knowing which column you're empty on. If you're a Tester, add a production gateway. If you're a Watcher, run a red-team exercise once. Either move is more useful than perfecting the half you already have.
 
 ***
 
