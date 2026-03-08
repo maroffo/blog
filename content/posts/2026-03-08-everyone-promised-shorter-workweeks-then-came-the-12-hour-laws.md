@@ -12,7 +12,7 @@ cover:
 
 In 1865, William Stanley Jevons published *The Coal Question* and noticed something that nobody wanted to hear. James Watt's steam engine had made coal use far more efficient. The reasonable expectation was that Britain would burn less coal. The opposite happened. Efficiency made coal-powered industry viable in places it hadn't been before, and consumption exploded.
 
-Jevons put it bluntly: "It is wholly a confusion of ideas to suppose that the economical use of fuel is equivalent to a diminished consumption. The very contrary is the truth."
+Jevons didn't mince words: "It is wholly a confusion of ideas to suppose that the economical use of fuel is equivalent to a diminished consumption. The very contrary is the truth."
 
 He wasn't just talking about coal. In the same book, he noted that labor-saving machinery "throws labourers out of employment for the moment. But such is the increased demand for the cheapened products, that eventually the sphere of employment is greatly widened." More efficiency, more work. Not less.
 
