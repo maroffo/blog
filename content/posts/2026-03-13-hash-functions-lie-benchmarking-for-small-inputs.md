@@ -2,7 +2,7 @@
 title: "Hash Functions Lie: Benchmarking for Small Inputs"
 date: 2026-03-13
 summary: "xxHash3 is supposed to be 300% faster than FNV. We benchmarked it on 5-40 byte inputs and it was 23% slower. Here's why GB/s league tables are meaningless for small data, and what actually matters."
-tags: [golang, performance, hashing]
+tags: [golang, performance, hashing, hikmaai]
 draft: false
 cover:
   image: "images/cover-hash-functions-lie.png"
@@ -22,7 +22,7 @@ This is a post about small inputs, wrong assumptions, and the gap between what b
 
 ### What we're building
 
-I'm working on a Go service that needs to compute [MinHash](https://en.wikipedia.org/wiki/MinHash) signatures on every incoming request, at high throughput. The service sits on the hot path: every millisecond of latency is a millisecond the user waits.
+At [HikmaAI](https://hikmaai.io) I'm working on a Go service that needs to compute [MinHash](https://en.wikipedia.org/wiki/MinHash) signatures on every incoming request, at high throughput. The service sits on the hot path: every millisecond of latency is a millisecond the user waits.
 
 MinHash is simple in principle: break your input into overlapping n-grams (subsequences), hash each one with K different hash functions, keep the minimum hash value for each function. Two inputs that share many n-grams produce similar signatures.
 
