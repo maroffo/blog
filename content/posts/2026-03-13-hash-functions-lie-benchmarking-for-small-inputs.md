@@ -3,7 +3,7 @@ title: "Hash Functions Lie: Benchmarking for Small Inputs"
 date: 2026-03-13
 summary: "xxHash3 is supposed to be 300% faster than FNV. We benchmarked it on 5-40 byte inputs and it was 23% slower. Here's why GB/s league tables are meaningless for small data, and what actually matters."
 tags: [golang, performance, hashing, hikmaai]
-draft: false
+draft: true
 cover:
   image: "images/cover-hash-functions-lie.png"
   alt: "A broken speedometer next to tiny scattered bytes"
