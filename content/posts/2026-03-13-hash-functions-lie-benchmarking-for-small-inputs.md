@@ -2,7 +2,7 @@
 title: "Hash Functions Lie: Benchmarking for Small Inputs"
 date: 2026-03-13
 summary: "xxHash3 is supposed to be 300% faster than FNV. We benchmarked it on 5-40 byte inputs and it was 23% slower. Here's why GB/s league tables are meaningless for small data, and what actually matters."
-tags: [golang, performance, hashing, hikmaai]
+tags: [golang, performance, hashing]
 draft: false
 cover:
   image: "images/cover-hash-functions-lie.png"
@@ -22,13 +22,13 @@ This is a post about small inputs, wrong assumptions, and the gap between what b
 
 ### What we're building
 
-[Mirsad](https://github.com/hikmaai-io/hikma-mirsad) is a security gateway that sits between applications and LLM providers. It fingerprints every prompt using Locality-Sensitive Hashing (MinHash) to detect injection attacks by shape, not content. The prompt text never leaves the gateway; only the hash does.
+I'm working on a Go service that needs to compute [MinHash](https://en.wikipedia.org/wiki/MinHash) signatures on every incoming request, at high throughput. The service sits on the hot path: every millisecond of latency is a millisecond the user waits.
 
-The core of MinHash is simple: take your input, break it into overlapping n-grams (subsequences), hash each one with K different hash functions, and keep the minimum hash value for each function. Two inputs that share many n-grams will produce similar MinHash signatures.
+MinHash is simple in principle: break your input into overlapping n-grams (subsequences), hash each one with K different hash functions, keep the minimum hash value for each function. Two inputs that share many n-grams produce similar signatures.
 
 The trick is that K is large. We use 128 hash permutations. Hashing every n-gram 128 times would be expensive, so we use the [Kirsch-Mitzenmacher optimization](https://www.eecs.harvard.edu/~michaelm/postscripts/rsa2008.pdf): compute just 2 independent hash values (h1, h2) per n-gram, then derive all 128 permutations as `g(j) = h1 + j * h2`.
 
-This means the hash function runs on every n-gram of every prompt. Token 3-grams are 15-40 bytes. Character 5-grams are exactly 5 bytes. This is the hot path. Every nanosecond counts.
+This means the hash function runs on every n-gram of every request. Token 3-grams are 15-40 bytes. Character 5-grams are exactly 5 bytes. This is the hot path. Every nanosecond counts.
 
 ***
 
@@ -51,7 +51,7 @@ For character 5-grams (5 bytes), the two were statistically identical.
 
 The reason is not that xxHash3 is a bad hash function. It's excellent for what it's designed for. The reason is *input preparation*.
 
-xxHash3, like most hash libraries, takes a `[]byte` or `string` as input. It needs contiguous memory. Our token n-grams are slices of strings: `["ignore", "all", "previous"]`. To feed this to xxHash, you need `strings.Join(tokens[i:i+3], " ")`, which allocates a new string for every single n-gram. With hundreds of n-grams per prompt, that's hundreds of allocations.
+xxHash3, like most hash libraries, takes a `[]byte` or `string` as input. It needs contiguous memory. Our token n-grams are slices of strings: `["ignore", "all", "previous"]`. To feed this to xxHash, you need `strings.Join(tokens[i:i+3], " ")`, which allocates a new string for every single n-gram. With hundreds of n-grams per request, that's hundreds of allocations.
 
 Our inline FNV approach iterates the token bytes directly without ever building the joined string:
 
@@ -96,7 +96,7 @@ Our approach uses FNV-1a and FNV-1 as the two base hashes, computed inline durin
 
 Same constants, same input, different operation order. We get two hash values from a single pass over the bytes, with zero allocations.
 
-The honest trade-off: FNV has weak avalanche properties compared to xxHash3 or MurmurHash3. The statistical quality of our MinHash signatures is probably slightly worse than what we'd get from a better hash family. For our use case (detecting structural similarity in prompts to flag injection attacks, not exact Jaccard estimation), this is acceptable. We're not computing similarity coefficients to three decimal places; we're asking "does this prompt look suspiciously like a known attack pattern?" A few percentage points of Jaccard estimation error doesn't change that answer.
+The honest trade-off: FNV has weak avalanche properties compared to xxHash3 or MurmurHash3. The statistical quality of our MinHash signatures is probably slightly worse than what we'd get from a better hash family. For our use case (detecting structural similarity for pattern matching, not exact Jaccard estimation), this is acceptable. We're not computing similarity coefficients to three decimal places; we're asking "does this input look like something we've seen before?" A few percentage points of Jaccard estimation error doesn't change that answer.
 
 If we needed higher accuracy, we'd inline a better mixing function (MurmurHash3's `fmix32` or wyhash's multiply-xor-multiply) into the same zero-allocation loop. The point isn't "FNV is the best hash." It's not. The point is that *any* hash you can compute inline over non-contiguous data will beat a superior hash that forces you to build a contiguous buffer first.
 
@@ -177,7 +177,7 @@ Why does this help? Four independent computations (v0-v3) let the CPU pipeline t
 
 The Go compiler (as of 1.26) doesn't do this automatically. It's conservative about loop transformations, especially when the loop body contains conditional writes (`if val < sig[j]`). Other compilers (GCC, LLVM) are more aggressive, but Go prioritizes compilation speed and predictable output over maximum optimization.
 
-6-7% on a loop that runs for every n-gram of every prompt adds up. On a gateway processing 10,000 requests per second with 50 n-grams each, that's 500,000 loop executions per second. The unrolling saves roughly 35 microseconds of CPU per second. Not life-changing, but free.
+6-7% on a loop that runs for every n-gram of every request adds up. On a service processing 10,000 requests per second with 50 n-grams each, that's 500,000 loop executions per second. The unrolling saves roughly 35 microseconds of CPU per second. Not life-changing, but free.
 
 ***
 
@@ -185,7 +185,7 @@ The Go compiler (as of 1.26) doesn't do this automatically. It's conservative ab
 
 Profile-Guided Optimization (PGO) has been stable in Go since 1.21. You collect a CPU profile from a representative workload, feed it to the compiler, and it makes better inlining and branch prediction decisions. On our hash-heavy workload, PGO gives a consistent 5-7% throughput improvement.
 
-The "almost" is about a gotcha. PGO auto-detection works by looking for a `default.pgo` file in the `main` package directory. For `go build ./cmd/mirsad`, placing the profile at `cmd/mirsad/default.pgo` works. But `go test` doesn't find it.
+The "almost" is about a gotcha. PGO auto-detection works by looking for a `default.pgo` file in the `main` package directory. For `go build ./cmd/myservice`, placing the profile at `cmd/myservice/default.pgo` works. But `go test` doesn't find it.
 
 Why? `go test` creates a synthetic `main` package in a temporary directory. That temp directory doesn't have your profile. The fix is to pass the path explicitly:
 
@@ -202,7 +202,7 @@ Our workflow:
 make pgo     # runs the gateway under load, saves default.pgo
 
 # Build with PGO.
-go build -pgo=default.pgo -o bin/mirsad ./cmd/mirsad
+go build -pgo=default.pgo -o bin/myservice ./cmd/myservice
 
 # Benchmark with PGO.
 make bench-pgo   # passes -pgo flag to go test
@@ -239,7 +239,7 @@ None of this is specific to Go or to hashing. Serialization, compression, encryp
 
 ***
 
-*The code shown in this post is from [hikma-mirsad](https://github.com/hikmaai-io/hikma-mirsad), an open-source AI security gateway. The MinHash implementation is in `internal/lsh/hash.go`.*
+*The code shown in this post is from a production Go service. Variable names are unchanged from the real codebase.*
 
 ***
 
