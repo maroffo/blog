@@ -41,7 +41,7 @@ theme = ["hugo-theme-papermod-nur", "PaperMod"]
   disabled = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
 
 [menu]
   [[menu.main]]

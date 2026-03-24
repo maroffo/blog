@@ -1,5 +1,5 @@
 ---
 title: "Search"
-layout: "search"
+layout: "pagefind"
 placeholder: "Search posts..."
 ---
