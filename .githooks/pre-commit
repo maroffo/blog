@@ -1,0 +1,20 @@
+#!/bin/bash
+# Block commits that include draft posts in content/posts/.
+# Drafts belong in content/drafts/ (gitignored).
+#
+# Reads from the git index (not the working tree) to avoid false negatives
+# when staged content differs from the working copy.
+
+drafts_in_posts=$(git diff --cached --name-only --diff-filter=d -- 'content/posts/*.md' | while read -r file; do
+    if git show ":$file" | grep -Eqi '^[[:space:]]*draft:[[:space:]]*true'; then
+        echo "  $file"
+    fi
+done)
+
+if [ -n "$drafts_in_posts" ]; then
+    echo "ERROR: draft posts found in content/posts/:"
+    echo "$drafts_in_posts"
+    echo ""
+    echo "Move them to content/drafts/ before committing."
+    exit 1
+fi
