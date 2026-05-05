@@ -5,11 +5,49 @@ summary: "About Massimiliano Aroffo"
 showToc: false
 ---
 
-For the full bio, projects, and links, head to [maroffo.github.io](https://maroffo.github.io/).
+![Massimiliano Aroffo](/blog/images/about-portrait.jpg)
 
-### What I write about
+I'm Massimiliano Aroffo. Most people call me Max.
 
-- **AI-assisted development**: practical patterns for working with Claude Code, Gemini, and other AI tools
-- **Performance optimization**: Go, PostgreSQL, Redis, caching strategies
-- **DevOps & automation**: CI/CD pipelines, deployment notifications, infrastructure as code
-- **Engineering leadership**: productivity measurement, developer experience, team building
+The Twitter bio I wrote years ago and never bothered to update still describes me about right: *Father of two, sea lover, geek, lifelong learner, agile practitioner, software craftsman, cat herder*. I would change very little.
+
+### What I do for a living
+
+I've been writing software professionally for over 25 years. I started as a CTO in 1999 and spent most of the last two decades wearing some combination of CTO, VP Engineering, and CISO hats at [Motonline](https://www.dueruote.it/), [Editoriale Domus](https://www.edidomus.it/), [Sinapsi](https://www.sinapsi.com/), [Energeya](https://www.fisglobal.com/) (now FIS), [ShopFully](https://corporate.shopfullygroup.com/), and [Iungo](https://www.iungo.com). I built and scaled engineering teams, ran AWS and GCP migrations, and picked up enough cybersecurity work along the way to end up as CISO and DPO in a couple of those places. The full timeline and certifications are on the long-form [CV](https://maroffo.github.io/).
+
+In 2025 I went back to writing code full-time, and moved back to Sardinia at the same time. The two decisions were related. Professionally, I wanted to spend my days inside an AI-assisted workflow rather than reading about it: there is a difference between hearing about Claude Code at a meetup and watching an agent quietly delete a function you'd just spent forty minutes designing. Personally, I had been away from the sea and from my old friends for too long, and I wanted both back.
+
+Today I split my time between two roles. I'm Principal Engineer at [HikmaAI](https://hikmaai.io), a Responsible AI Security Platform on GCP, and I continue with [Wishew](https://wishew.com) as Cloud Architect on the Go backend I built there last year. Both jobs are Go on GCP. Most of my week splits between system design, code I write, and code an agent wrote that I now have to review, and the proportions of those three have shifted enough in twelve months to be worth writing about. That shift is what most of this blog is about.
+
+### What this blog is, and isn't
+
+This is not productivity content and it is not AI hype. The honest take on AI-assisted engineering sits somewhere unflattering for both camps, and the posts here try to land there.
+
+The recurring themes:
+
+- **AI-assisted engineering**: Claude Code, harnesses, modular skill systems, agents that delete code they don't understand
+- **Cognitive load**: how AI moves it rather than reducing it
+- **The talent pipeline**: if junior developers learn through the work AI now does, how do they get to senior?
+- **Performance engineering**: real Go and Postgres optimisation from production systems, including a 75% latency reduction story
+- **Policy and ethics**: occasional notes on DeepSeek and the censorship layer, on the Italian working-hours law, on what we build and why
+
+Posts are written with AI assistance for literature retrieval and drafting, with manual editing throughout. I read the source papers I cite directly, not AI summaries of them. When I get something wrong, I correct it openly.
+
+### Outside the screen
+
+![With my family on the beach](/blog/images/about-family-beach.jpg)
+
+A wife, two kids, and a Golden Retriever. The dog needs walking, which is more relevant to how the work goes than I would have guessed.
+
+The place I love most is **Geremeas**, a stretch of coast on the south-east of Sardinia. I've been spending summers there for about ten years, and most of the people I share those summers with are friends I made in Geremeas itself rather than friends I arrived with.
+
+![Geremeas at sunset](/blog/images/about-geremeas-sunset.jpg)
+
+### Connect
+
+- GitHub: [github.com/maroffo](https://github.com/maroffo)
+- LinkedIn: [linkedin.com/in/maroffo](https://it.linkedin.com/in/maroffo)
+- Email: massimiliano.aroffo at hikmaai.io, or maroffo at gmail.com
+- RSS: [/blog/index.xml](/blog/index.xml)
+
+For the long-form CV and side projects, [maroffo.github.io](https://maroffo.github.io/).
