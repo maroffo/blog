@@ -39,7 +39,7 @@ Posts are written with AI assistance for literature retrieval and drafting, with
 
 A wife, two kids, and a Golden Retriever. The dog needs walking, which is more relevant to how the work goes than I would have guessed.
 
-The place I love most is **Geremeas**, a stretch of coast on the south-east of Sardinia. I've been spending summers there for about ten years, and most of the people I share those summers with are friends I made in Geremeas itself rather than friends I arrived with.
+Half an hour from home there is **Geremeas**, on the south-eastern coast of Sardinia: a long beach, an open sea, the kind of sunsets that earn their reputation, and most importantly a group of friends I met there. They are wonderful people, and thankfully none of them share my trade, which is probably why they keep me light. For about ten years now we have been renewing the same summer ritual. More than anything else, that is the reason I moved back.
 
 ![Geremeas at sunset](/blog/images/about-geremeas-sunset.jpg)
 
