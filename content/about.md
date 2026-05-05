@@ -37,7 +37,7 @@ Posts are written with AI assistance for literature retrieval and drafting, with
 
 ![With my family on the beach](/blog/images/about-family-beach.jpg)
 
-A wife, two kids, and a Golden Retriever. The dog needs walking, which is more relevant to how the work goes than I would have guessed.
+A wife, two kids, and a Golden Retriever.
 
 Half an hour from home there is **Geremeas**, on the south-eastern coast of Sardinia: a long beach, an open sea, the kind of sunsets that earn their reputation, and most importantly a group of friends I met there. They are wonderful people, and thankfully none of them share my trade, which is probably why they keep me light. For about ten years now we have been renewing the same summer ritual. More than anything else, that is the reason I moved back.
 
