@@ -1,7 +1,7 @@
 ---
 title: "Cognitive Load Moved. My Pre-Work Routine Had to Move With It."
 date: 2026-05-05
-summary: "Three weeks ago I argued AI moved cognitive load instead of reducing it. If the load moved, what changes about how you set up the day? A decade of replication points to a five-minute habit, and a clearer picture of when it doesn't help."
+summary: "I came across the 2014 Oppezzo & Schwartz paper on Twitter this morning and went looking for the wider literature. What I found describes a pattern I had been running unconsciously for months: walking from the studio to the kitchen when stuck, a ten-minute loop to pick up my son, the dog out for a quick pee. A decade of replication, applied to AI-assisted work."
 tags: ["ai", "engineering", "cognitive-load", "habits"]
 draft: false
 cover:
@@ -10,13 +10,13 @@ cover:
   relative: false
 ---
 
-Three weeks ago I [wrote about how AI didn't reduce my cognitive load](/blog/posts/2026-03-06-ai-didnt-reduce-my-cognitive-load-it-moved-it/), it moved it. The typing got easier. The thinking got harder. The afternoons fill up with evaluation, architectural judgment, holding a correct mental model in place while scanning AI output for *almost right* deviations.
+This morning, scrolling Twitter before coffee had taken effect, I came across someone resurfacing a 2014 Stanford paper called *Give your ideas some legs: the positive effect of walking on creative thinking*. I clicked it expecting another lifestyle-content rerun. What I read instead made me think about my standing desk.
 
-What I didn't write about: the part of the day when that work goes well, and the part when it doesn't.
+Since I switched to a standing desk a while ago, I've drifted into a habit I never planned. When a problem won't unstick, I walk to the kitchen. When the afternoon gets heavy, I take the dog out for a two-minute pee in the courtyard. Some afternoons I walk the ten minutes to my son's school and back, and I notice that the next hour at the laptop is sharper than the one before. None of it was a deliberate routine. It was just where my body went when my head jammed.
 
-The pattern was hard to miss once I started paying attention. On the mornings I sat down and opened Claude Code immediately, the cognitive drag hit by mid-morning. On the mornings I walked first, even five minutes around the building, the architecture calls were sharper, the prompts were better-framed, and the afternoon left me less wrecked. There was also a smaller pattern at the desk itself: stepping away from the standing desk for two or three lengths of the corridor, then coming back, was enough to reset something when I felt my filter degrading.
+Three weeks ago I [wrote about how AI didn't reduce my cognitive load](/blog/posts/2026-03-06-ai-didnt-reduce-my-cognitive-load-it-moved-it/), it moved it. The typing got easier and the thinking got harder. The afternoons fill up with evaluation, architectural judgment, holding a correct mental model in place while scanning AI output for *almost right* deviations. What I didn't write was the second half of that observation: there is a part of the day when that work goes well, and a part when it doesn't, and the difference correlates suspiciously well with whether I've moved my legs in the previous hour.
 
-I treated it as placebo for a long time. Then I went looking, and the literature turned out to be more specific than I expected, and also more limited than the popular write-ups suggest.
+The Twitter post pulled me into the rest of the literature, and the literature describes the pattern I'd been running without knowing it. The other thing the literature is clear about: stepping away from the desk to scroll the same Twitter feed in a different posture is not the same intervention. The body has to actually move.
 
 ---
 
@@ -80,21 +80,23 @@ The implication for Phase 2 is uncomfortable. If broadening attention and loosen
 
 Two distinct interventions, one for each phase. The first is supported by the literature above. The second is what I observe in my own week and label more cautiously.
 
-**Phase 1: a free walk before the generative work.**
+**Phase 1: a real walk before the generative work.**
 
-Five to ten minutes, before opening any AI tool. Not a treadmill, not a timed loop, not while reading on a phone. Out the door, around a block, into a corridor if it's raining, with no destination and no pace target. The point is to move without thinking about how you're moving; if I find myself checking my watch, I'm doing it wrong.
+Five to ten minutes, before opening any AI tool. Not a treadmill, not a timed loop, not while reading on a phone. The school run on foot, the dog around the courtyard, a slow loop of the block with no destination and no pace target. The mornings I do the school drop-off on foot are reliably the mornings the architecture work goes best afterwards, which I now suspect is not coincidence. The point is to move without thinking about how you're moving; if I find myself checking my watch, I'm doing it wrong.
 
 I try to sit down to the work within ten minutes of returning. Oppezzo's residual-boost data is the reason: people who sat after walking still outscored people who never walked, but the effect isn't all-day, so the earlier the better. The work that benefits is the generative half (architecture decisions, problem framing, ADR drafting, the prompt that kicks off a long Claude Code session), not the kind of day where I'm implementing against a frozen spec or working a known bug.
 
 One practical detail: I resist the temptation to start the Claude Code session on the walk via voice. The walk is supposed to broaden attention; prompting an LLM does the opposite, and running both at once cancels the benefit.
 
-**Phase 2: micro-walks at the desk, for vigilance recovery.**
+**Phase 2: short loops away from the desk, for vigilance recovery.**
 
 This one I label more cautiously, because the divergent-thinking literature does not predict it and may even predict the opposite. The pattern in my own week is consistent, but I'm describing observation, not evidence.
 
-The signal I've learned to recognise: I'm at the standing desk, halfway through a long Claude Code diff, and somewhere around the 20-minute mark my filter starts to slip. The acceptances come faster than the scrutiny, and the suggestions begin to look better than they actually are. The mistakes I'd catch fresh slide past. When I notice it I step away from the desk and walk two or three lengths of the office corridor, maybe two minutes. Then I come back, restart the diff from the top of the section I was on, and the second pass tends to pick up what the first one missed.
+The signal I've learned to recognise: I'm at the standing desk, halfway through a long Claude Code diff, and somewhere around the 20-minute mark my filter starts to slip. The acceptances come faster than the scrutiny, and the suggestions begin to look better than they actually are. The mistakes I'd catch fresh slide past. When I notice it, I leave the studio. A walk to the kitchen and back, the dog out for a quick pee, two laps of the corridor if I really can't leave the house. Two or three minutes. Then I come back, restart the diff from the top of the section I was on, and the second pass tends to pick up what the first one missed.
 
-This is not the same intervention as the morning walk. It is shorter, it is at the desk, and the literature it most resembles is on vigilance and attention restoration, not divergent thinking. The 1950 Mackworth result I cited in the predecessor post is the anchor: sustained focused attention degrades within roughly half an hour, and brief breaks help reset it. Take this as a habit I run because it tracks with what I observe, not as something the divergent-thinking studies vouch for.
+What does *not* work for me is staying at the desk and switching to Twitter or HackerNews for two minutes. The posture is the same, the screen is the same, the only thing that changes is the source of input. The filter doesn't reset. The body has to physically leave.
+
+This is not the same intervention as the morning walk. It is shorter, it is reactive, and the literature it most resembles is on vigilance and attention restoration, not divergent thinking. The 1950 Mackworth result I cited in the predecessor post is the anchor: sustained focused attention degrades within roughly half an hour, and brief breaks help reset it. Take this as a habit I run because it tracks with what I observe, not as something the divergent-thinking studies vouch for.
 
 **The chronic and acute effects compound.**
 
@@ -120,9 +122,9 @@ And the effect size is what it is: a meta-analytic *g* around 0.4 on divergent-t
 
 Three weeks ago I argued that AI moved cognitive load rather than reducing it. The follow-up question was: if the load moved, what changes about how I set up the day?
 
-Most of the "AI productivity" advice I see online keeps optimising the part that's already optimised: more tools and orchestration around the convergent work AI already handles well. The part that got harder is the thinking. And the thinking, once you actually look at it, splits into two phases that don't respond to the same intervention. For the generative half, the morning walk has about a decade of converging evidence behind it at a modest effect size. For the evaluative half, walking is probably the wrong tool, and what I use instead is a two-minute corridor break, on much weaker grounds.
+The honest answer in my case turned out not to be a routine I designed. It was a routine my body had built around the standing desk, the school run, and the dog, while I wasn't paying attention. Reading the 2014 paper this morning was less a discovery than a label for something I was already doing. The literature gave it a mechanism (free, unconstrained walking loosens executive control, which is what divergent thinking wants) and also a clean limit: it's a Phase 1 intervention, mostly, and the evaluation half of the day needs something different.
 
-Neither one is a transformative habit. They are smaller and more specific than the version of this story I'd expect to read on LinkedIn, which is roughly why I trust them.
+Most of the "AI productivity" advice I see online keeps optimising the part that's already optimised: more tools and orchestration around the convergent work AI already handles well. The part that got harder is the thinking, and the thinking, once you look at it carefully, splits into two phases that don't respond to the same intervention. Neither of mine is a transformative habit. The school drop-off on foot, the dog out for a pee, the kitchen-and-back when stuck. They are smaller and more domestic than the version of this story I'd expect to read on LinkedIn, which is roughly why I trust them.
 
 ---
 
