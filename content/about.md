@@ -9,7 +9,7 @@ showToc: false
 
 I'm Massimiliano Aroffo. Most people call me Max.
 
-The Twitter bio I wrote years ago and never bothered to update still describes me about right: *Father of two, sea lover, geek, lifelong learner, agile practitioner, software craftsman, cat herder*. I would change very little.
+My Twitter bio is the shortest honest version of me I've managed to write: *Father of two, sea lover, geek, lifelong learner, agile practitioner, software craftsman, cat herder*. Each of those is load-bearing, and the order is roughly the order in which they show up on a normal day.
 
 ### What I do for a living
 
