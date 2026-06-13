@@ -72,6 +72,8 @@ Matteo Flora made the sharper version of this point, and it changed how I read t
 
 So I am not selling optimism, and the economics are not on my side either. For most companies today, renting the best American model is the rational call: cheaper and faster and sitting right there behind an API. I am not arguing about that default. I am arguing about the floor, the handful of capabilities you cannot afford to have switched off from somewhere you do not get to vote. The inference layer is moving, and moving fast, and the work HikmaAI and Xference showed in Milan is a small, concrete piece of that. The chips are the long game, and that one is not a startup's job to solve. It is an industrial choice, the kind only governments and very patient capital can make, and Europe has spent a decade not quite making it.
 
+The money was even there. NextGenerationEU was the largest recovery program Europe has aimed at itself in generations, and Italy's share of it, the PNRR, was the biggest slice of the lot. If we had found the nerve to put even half of that into technological infrastructure and research, we might be a little less vulnerable today. Instead, at least in Italy, we built roundabouts.
+
 What changed yesterday is that the cost of not deciding got a face. For years, "strategic dependency" was a phrase for panel discussions. On June 12 it became a letter, and an afternoon, and a product that worked in the morning and did not by dinner.
 
 People far closer to this than I am, Mistral's CEO among them, keep saying the window to fix this is short, measured in a few years and not decades. I think they are right, and the honest move is to act like we believe them.
