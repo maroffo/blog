@@ -3,7 +3,7 @@ title: "Own the Whole Stack, Down to the Silicon"
 date: 2026-06-13
 summary: "A US export letter switched off two frontier models overnight. For anyone building AI in Europe, that was a fire drill, and we should not waste it."
 tags: ["ai", "llm", "security", "europe", "sovereignty"]
-draft: true
+draft: false
 cover:
   image: "images/cover-own-the-whole-stack.png"
   alt: "Own the Whole Stack, Down to the Silicon"
