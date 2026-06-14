@@ -80,7 +80,7 @@ People far closer to this than I am, Mistral's CEO among them, keep saying the w
 
 There are two ways to pay for this. One is now, in money and effort and decisions nobody enjoys making. The other is later, in a letter we never got the chance to read.
 
-Mauro Medda, the colleague I had this argument with, wrote up his own version the same day: [Own the Stack, or Rent the Future](https://mauro.medda.xyz/posts/own-the-stack-or-rent-the-future/). Same conversation, same conclusion, he leaning harder on the industrial strategy and me on the security and the politics. Read his too.
+Mauro Medda, the colleague I had this argument with, wrote up his own version the same day: [Own the Stack, or Rent the Future](https://mauro.medda.xyz/posts/own-the-stack-or-rent-the-future/). He lays out the strategy: what Europe should actually build, and how. As usual, his vision runs a step ahead of the rest of us. Read it.
 
 ***
 
