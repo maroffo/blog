@@ -80,6 +80,8 @@ People far closer to this than I am, Mistral's CEO among them, keep saying the w
 
 There are two ways to pay for this. One is now, in money and effort and decisions nobody enjoys making. The other is later, in a letter we never got the chance to read.
 
+Mauro Medda, the colleague I had this argument with, wrote up his own version the same day: [Own the Stack, or Rent the Future](https://mauro.medda.xyz/posts/own-the-stack-or-rent-the-future/). He lays out the strategy: what Europe should actually build, and how. As usual, his vision runs a step ahead of the rest of us. Read it.
+
 ***
 
 ### Sources and further reading
@@ -94,6 +96,7 @@ There are two ways to pay for this. One is now, in money and effort and decision
 8. ["Anthropic scales Claude Mythos to critical infrastructure in 15+ countries"](https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/) - TechCrunch, June 2026, and ["Anthropic to give the EU's cybersecurity agency access to Mythos"](https://www.bloomberg.com/news/articles/2026-06-01/anthropic-to-give-eu-s-cybersecurity-agency-access-to-mythos) - Bloomberg, June 2026
 9. HikmaAI - [hikmaai.io](https://hikmaai.io)
 10. ["Axelera AI launches inferencing chiplet, supported by funding from the EU's RISC-V project"](https://www.datacenterdynamics.com/en/news/axelera-ai-launches-inferencing-chiplet-supported-by-funding-from-eus-risc-v-project/) - Data Center Dynamics, March 2025
+11. Mauro Medda, ["Own the Stack, or Rent the Future"](https://mauro.medda.xyz/posts/own-the-stack-or-rent-the-future/) - mauro.medda.xyz, June 2026
 
 ***
 
