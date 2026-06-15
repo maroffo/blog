@@ -10,7 +10,7 @@ cover:
   relative: false
 ---
 
-A post popped up on my Facebook feed this morning, the kind that goes viral instantly, shared by Mario Mariani with a brief, punchy comment: «Bravo Maurizio. Tutto chiaro :)». It is about Sardinia's economy, it is genuinely well written, but it left me with a mix of numbers and a certain frustration that I cannot quite shake off. I agree with almost every line. It is only at the conclusion that our paths diverge.
+A post popped up on my Facebook feed this morning, the kind that goes viral instantly. It is about Sardinia's economy, it is genuinely well written, but it left me with a mix of numbers and a certain frustration that I cannot quite shake off. I agree with almost every line. It is only at the conclusion that our paths diverge.
 
 If we set aside petroleum and its derivatives, the number-one "product" we export to the rest of the world is not pecorino, not wine, and not chemicals. 
 It is a foreign tourist's holiday. 
