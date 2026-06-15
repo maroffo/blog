@@ -10,7 +10,7 @@ cover:
   relative: false
 ---
 
-Stamattina mi è passato sotto gli occhi su Facebook uno di quei post che diventano subito virali, condiviso da Mario Mariani con un commento telegrafico: «Bravo Maurizio. Tutto chiaro :)». Parla dell'economia sarda, è scritto bene, ma mi ha lasciato addosso un misto di numeri e rabbia che non riesco a scrollarmi di dosso. Condivido quasi ogni riga. È sulla conclusione che le nostre strade si dividono.
+Stamattina mi è passato sotto gli occhi su Facebook uno di quei post che diventano subito virali. Parla dell'economia sarda, è scritto bene, ma mi ha lasciato addosso un misto di numeri e rabbia che non riesco a scrollarmi di dosso. Condivido quasi ogni riga. È sulla conclusione che le nostre strade si dividono.
 
 Se togliamo il petrolio e i suoi derivati, il primo "prodotto" che esportiamo non è il pecorino, non è il vino e non è la chimica. 
 È la vacanza di un turista straniero. 
