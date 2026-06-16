@@ -60,6 +60,23 @@ graph LR
 
 **Takeaway:** The second-opinion step on blog posts is as valuable as on code. Gemini's editorial feedback is different from Claude's: it catches tone inconsistencies and structural weaknesses that the author (human or AI) is too close to see.
 
+### 2026-06-15: "A Billion in Beds" - bilingual variants, fact-checking a viral source, and editing drift
+
+**Context:** A data-heavy opinion piece replying to a viral Facebook post about Sardinia's economy (tourism is the top non-oil export but the lowest-productivity sector). Published as two posts, English and Italian.
+
+**Bilingual convention, now settled:** the blog is single-language in `hugo.toml` (no i18n), so a language variant is just another post file with its own slug. The two posts share **one** cover image, because the covers carry no text (black-and-white ink sketch). `cover-a-billion-in-beds.png` is referenced by both front matters. One image, two posts, zero duplication.
+
+**Never trust the numbers you are handed, even from a good source.** The viral post was well argued, and almost every figure in it needed a caveat or a correction once checked against the primary source:
+- The ISTAT "99,015 productivity / 17,709 income" numbers are **national tourism-sector** figures, not Sardinian. The source implied they were local. We kept them but said so, and added that Sardinia's hyper-seasonal, lodging-heavy mix is likely *worse* than the national average.
+- The source's precise export breakdown (chemicals 282M, dairy 161M) did not match ISTAT (chemicals ~177M in 2023). We dropped the exact figures and stated a defensible aggregate instead ("the whole non-oil export base is under 1.2bn").
+- "Beach disease" (Holzner, 2011) is a real coined term whose author found *little* cross-country evidence for it. Presented as a hypothesis, not a finding.
+
+**Manual rewrites regress, so re-check after every hand-edit.** After the AI draft was reviewed and tightened, the author hand-rewrote both posts, and two factual slips crept back *in* during the manual pass: "44,000 families" became "43,000" (Quarantatremila) in one sentence, and the CRENoS "96% micro-firms / 60% of all jobs" stat got narrowed to "tourism companies" when it is economy-wide. A human rewrite needs the same consistency pass as the AI draft. After any hand-edit round, re-grep the post for its numbers and named entities.
+
+**Adversarial review earns its keep on opinion pieces.** Two isolated-reviewer rounds (Claude + Gemini in Docker) plus a tightening round caught the things the author could not see: a missing Costa Smeralda concession that undercut the "lowest value" claim, and a logical tension (attacking the 44k-families rental model while elsewhere praising "value that stays"). The fix was conceptual, not cosmetic: distinguish *retaining* a euro from *compounding* one. "Resilient is not the same as rich."
+
+**Takeaway:** for research-backed posts, the credibility is in the footnotes. The methodology note that says "I checked every figure" only earns trust if you actually did, including after the last human edit.
+
 ## Pitfalls & Gotchas
 
 - **Hugo submodule empty after clone.** `themes/PaperMod/` shows as empty directory. Hugo builds 42 pages but every route returns 404. Fix: `git submodule update --init --recursive`.
@@ -69,6 +86,10 @@ graph LR
 - **`_generate_image.py` needs GEMINI_API_KEY.** Gemini CLI reads its own config, but the Python script reads `os.environ`. Fixed: script now tries `~/.env` as fallback.
 
 - **Hugo draft flag is case-insensitive** (both `draft: true` and `Draft: True` work). The pre-commit hook uses `grep -Eqi` to match all YAML variations.
+
+- **Theme submodule not populated on a fresh branch/worktree = silent half-build.** Same root cause as the empty-submodule-after-clone gotcha, but sneakier: `make check` / `hugo` exit 0 and write `public/`, yet render **no single post pages** (only home, list pages, and `index.xml`). The build "passes," so you think you are fine. Spotted it when `find public -name '*billion*'` came back empty after a successful build. Two practical consequences: (1) fix real rendering with `git submodule update --init --recursive`; (2) if you only need a post's canonical URL and the single pages are not rendering, read it straight from `public/posts/index.xml` (the RSS `<link>`), which builds even without the theme.
+
+- **A branch created from `origin/main` tracks `main`, so a bare `git push` can target main.** `git checkout -b post/foo origin/main` sets the upstream to `origin/main`. A plain `git push` would then try to push to main. Always push to the branch's own ref explicitly: `git push -u origin post/foo:post/foo`. The main-branch guard catches *commits* on main, not necessarily a push to it, so do not rely on it here.
 
 ## Best Practices Discovered
 
