@@ -11,16 +11,16 @@ Cadence target: ~weekly. Keep the mix balanced (don't let the retrospective pipe
 
 ---
 
-## Active queue
+## Published
 
-### 1. AI Benchmarks Are Confident, Plausible, and 23% Slower
-- **Slot:** ~2026-06-20
-- **Type:** AI-skeptic
-- **Angle:** An AI assistant confidently claimed xxHash3 would be "300-400% faster" than FNV-1a and called the switch mandatory. Benchmarked on the real workload (small 15-40 byte inputs, token n-grams), it was 23% *slower*, because `strings.Join` allocates per n-gram and function-call overhead dominates at that size. Parallel beat: porting deterministic PGTune formulas instead of asking an LLM to suggest Postgres tuning. Thesis: an LLM knows statistics, it doesn't *measure*; use it to generate hypotheses, never to delegate deterministic math or micro-optimization.
-- **Gap:** The web is wall-to-wall "LLM leaderboard 2026" and generic benchmark comparisons. Nobody publishes the first-person empirical takedown of an LLM's confidently-wrong performance advice.
-- **Unique value:** I have the actual benchmark numbers from a real codebase, and an established AI-skeptic register (Cognitive Surrender, Agents Delete Good Code).
-- **Caveat:** Stay in the AI-trust lane, NOT the benchmarking-methodology lane, or it retreads the published performance posts.
-- **Source:** hikma-mirsad, hikma-pgpilot LEARNING.md
+### The AI Said Mandatory. I Measured 23% Slower.
+- **Published:** 2026-06-18 (post dated 2026-06-17). [Live](https://maroffo.github.io/blog/posts/2026-06-17-the-ai-said-mandatory-i-measured-23-percent-slower/)
+- **Was:** idea #1 ("AI Benchmarks Are Confident, Plausible, and 23% Slower"). Final cut reframed around "an LLM is a semantic engine, blind to execution topology"; the confidence angle demoted to a consequence; specific hash names genericized for IP (agentic-security product); the Bloom-filter beat rewritten to "a hidden, unverifiable assumption" after the original Kirsch-Mitzenmacher claim was caught as technically wrong. Shipped after six isolated second-opinion rounds (Claude / Gemini / DeepSeek).
+- **LinkedIn:** push scheduled Tue 2026-06-23, 10:00.
+
+---
+
+## Active queue
 
 ### 2. 372 Passing Tests and a Dead Program
 - **Slot:** ~2026-06-27
