@@ -10,7 +10,7 @@ cover:
   relative: false
 ---
 
-Six in the morning in Villanova, one of Cagliari's old quarters, where I've lived since the spring. The streets around home go up before they go anywhere else, and a couple of minutes into the first climb my Apple Watch buzzed: 144 bpm, the ceiling I'd set for easy runs.
+Six in the morning in Villanova, one of Cagliari's old quarters, where I've lived since March. The streets around home go up before they go anywhere else, and a couple of minutes into the first climb my Apple Watch buzzed: 144 bpm, the ceiling I'd set for easy runs.
 
 I knew the script. Zone 2 is where the mitochondria get built. Go above it and the session is wasted. Walk the hill, keep the heart rate down, trust the process. I had absorbed it from podcasts, from people quoting the podcasts, and from the comments under both. So on that climb I could walk, because someone with a microphone says this intensity is magic, or keep running and accept that I was doing it wrong.
 
@@ -84,7 +84,7 @@ Yesterday I had my annual sports-medicine check, exactly a year after the previo
 
 Power at a fixed heart rate is a crude marker: heart rate trails a ramp this steep, and it moves with sleep, heat and coffee. But it's the same crude marker both years. The 2026 test also came five days after I donated blood, which lowers hemoglobin (by about 8% at day three in Ziegler et al. 2015), so each beat carried less oxygen; if anything, the second number is a little low. The line I care about most is the last one: fifteen points of systolic pressure in a year.
 
-Now the caveat this section exists for. That year includes six months in Bologna, a move to Cagliari, a summer at the sea, seven kilos lost, and a training routine that has nothing to do with the plan below, which has been in place only since mid-September. Too many things changed at once for an N of 1 to untangle. These numbers say I'm fitter. They don't say why.
+Now the caveat this section exists for. In September 2025 I was living at my house by the sea. I moved to Cagliari in March and only then started training properly; from June to August a back problem stopped me completely, and I started again at the beginning of September. Add seven kilos lost, and a plan (the one below) that has been in place only since mid-September. Too many things changed at once for an N of 1 to untangle. These numbers say I'm fitter. They don't say why.
 
 The number that sent me digging was a Polarization Index. intervals.icu gave one of my easy hilly runs in mid-September a PI of 0.27, and my first reading was that I'd been doing threshold training by accident. Treff et al. (2019), who defined the index, disagree: anything at or below 2.00 just means "not polarized", and values between 0 and 2.00 "must not be interpreted" any further. The index describes weeks of training, not one run, and my zones have never been validated. As evidence it's worth close to nothing, but it got me to open the trace.
 
@@ -97,7 +97,7 @@ The reading didn't push me toward more Zone 2. It pushed me toward being deliber
 | Day | Session | HR cap |
 |---|---|---|
 | Mon | Recovery run, 30', watch alert | ≤ 140 |
-| Tue | Beach volley, evening training | none |
+| Tue | Beach volley, evening training (new: three sessions so far) | none |
 | Wed | Steady run, 45', hilly | none; average 140-150 is fine |
 | Thu | Spin bike, 45' (plus gym, just starting) | ≤ 144 |
 | Fri | Hills: 6-7 × 2' up 300 m at ~10%, walk down in 3'30" | by breathing, Z4-Z5 |
@@ -105,6 +105,8 @@ The reading didn't push me toward more Zone 2. It pushed me toward being deliber
 | Sun | Long easy run, 55' building to 65', flat, at the Poetto | average ≤ 144, max ≤ 151 |
 
 On top of that: some weekend volley matches, an hour's walk most days, and in summer, swimming in the sea.
+
+The caps are looser than a strict Zone 2 plan for a reason no paper gave me. To keep my heart rate inside Zone 2 I'd have to run between 6:30 and 7:00 per kilometre, and at that pace my running mechanics are bad enough that my knees and back pay for it. So I'd rather run between 6:00 and 6:30, even when that takes me out of Zone 2. A heart-rate zone is a target for the heart; the rest of the body gets a vote too.
 
 The long run moved to the flat because of the comparison above. By the VO2max papers it's my least efficient hour, and I keep it for what they don't measure: time on my feet, tendons, and durability, which in Matomäki's companion study improved as much with low intensity as with intervals. The Wednesday steady has no ceiling on purpose. The middle zone isn't evil; it just shouldn't be every run's default. In recreational runners on three to four hours a week, polarized training hasn't beaten other splits in trials so far (see Sources). Next to the evidence above, that reads to me as: you need some intensity, and past that the exact ratio matters less than the podcasts suggest. The Friday hills are that intensity.
 
