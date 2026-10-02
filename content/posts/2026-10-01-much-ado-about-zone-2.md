@@ -1,7 +1,7 @@
 ---
 title: "Much Ado About Zone 2: What I Learned Reading the Papers Instead of the Podcasts"
 date: 2026-10-01
-summary: "My watch buzzed at 144 bpm on a climb, and I had to decide whether to walk because the internet says Zone 2 is magic. So I read the papers. The 80/20 rule comes from athletes training 10 to 13 times a week; at three hours, the denominator changes the answer. Plus my own numbers, with the caveats they need."
+summary: "My watch buzzed at 144 bpm on a climb, and I had to decide whether to walk because the internet says Zone 2 is magic. So I read the papers. The 80/20 rule comes from athletes training 10 to 13 times a week; at three hours of running a week, the denominator changes the answer. Plus my own numbers, with the caveats they need."
 tags: ["health", "science", "training", "sardinia"]
 draft: false
 cover:
@@ -39,9 +39,9 @@ Eighty percent is a ratio, and a ratio means nothing without its denominator. Th
 | Easy, 80% | 9 h 36' | 2 h 24' |
 | Hard, 20% | 2 h 24' | 36' |
 
-Ten easy hours a week are a stimulus in their own right, and the elite rations the hard share because recovery is the bottleneck: nobody absorbs ten hard sessions a week. 80/20 answers *their* constraint. Count by the clock instead, with the 91/6/3 split from Seiler and Kjerland's skiers, and it gets stranger: a twelve-hour week holds about twenty minutes above LT2, not far from my Friday hills. What I can't match is the other nine-plus hours. Turning my hard minutes into easy ones doesn't buy them; it only spends the one stimulus I can afford.
+Ten easy hours a week are a stimulus in their own right, and the elite rations the hard share because recovery is the bottleneck: nobody absorbs ten hard sessions a week. 80/20 answers *their* constraint. Count by the clock instead, with the 91/6/3 split from Seiler and Kjerland's skiers, and it gets stranger: a twelve-hour week holds about twenty minutes above LT2, not far from my Friday hills. What I can't match is the other nine-plus hours. Turning my hard minutes into easy ones doesn't buy them; it only spends the one stimulus I can afford. And counted the way Seiler counted, by sessions, a recreational runner with one hard run out of four is already close to 80/20. It's reading the ratio as minutes that turns it into "do mostly Zone 2".
 
-At three hours a week, recovery isn't my bottleneck, at least not yet. Stimulus is. Copying the ratio anyway is a three-person startup adopting Google's microservices architecture because that's how Google does it: the pattern is real, the conditions that made it right aren't there. Seiler raised this himself in 2009, asking whether the pattern suits "recreational athletes training 4-5 times and 6-10 hours per week" and noting that "there are almost no published data addressing this question". Six to ten hours. I'm on three.
+At three hours of running a week, recovery isn't what limits my running. Stimulus is. (With volley and the gym on top, at my age, that's an assumption I'll have to keep checking.) Copying the ratio anyway is a three-person startup adopting Google's microservices architecture because that's how Google does it: the pattern is real, the conditions that made it right aren't there. Seiler raised this himself in 2009, asking whether the pattern suits "recreational athletes training 4-5 times and 6-10 hours per week" and noting that "there are almost no published data addressing this question". Six to ten hours. My running is three.
 
 Attia now says much the same. In "A better way to think about Zone 2", co-signed with two colleagues on his site on 29 August, he writes that "Zone 2 isn't magic" and that with two hours a week "I might skip a dedicated Zone 2 training altogether", and admits the confusion is "something I've probably contributed to". The version living in my head, and on my wrist at 144 bpm, was still the 2023 one.
 
@@ -65,9 +65,7 @@ Age changes what limits you. Capelli, Ferretti, di Prampero and Tam (2025) re-an
 
 The muscle side is where the training literature has good news. Mølmen, Almquist and Skattebo's 2025 meta-regression of aerobic training, from continuous work to sprints (353 studies for mitochondria, 131 for capillaries), found mitochondrial gains "not influenced by age", capillary growth in people over 55 "comparable" to younger ones, and concluded that "the ability to adapt to exercise training is maintained throughout life." The catch is that absolute VO2max gains shrink: 4.8 mL/kg/min under 35, 2.9 between 35 and 55, 2.2 over 55.
 
-That's the cardio half. The other half is strength, which I'm only now starting, with a personal trainer. I lost seven kilos this year, and a scale can't tell me how many were muscle. Lahav et al. (2026) followed 304 dieters at an Israeli nutrition clinic with DXA scans: among men, those doing resistance training lost the most fat and were the only ones to gain fat-free mass, for similar total weight loss (among women, resistance training won on lean mass but not on fat). It's a retrospective cohort in which people picked their own exercise, so it's a signal rather than a verdict.
-
-And a small bonus for desk workers. In Baumgartner et al. (2025), 121 young adults who did about 40 minutes of moderate resistance exercise came out faster on executive-function tasks, though not more accurate, than a group who watched a video of someone else doing it, a protocol I have unknowingly replicated many times. One session, small effects, an average age of 27. For someone who reasons about distributed systems all day, I'll still take faster.
+That's the cardio half. The other half is strength, and it's the second cost of filling a short week with easy miles: an hour of Zone 2 is an hour not spent lifting. I'm only now starting, with a personal trainer. I lost seven kilos this year, and a scale can't tell me how many were muscle. Lahav et al. (2026) followed 304 dieters at an Israeli nutrition clinic with DXA scans: among men, those doing resistance training lost the most fat and were the only ones to gain fat-free mass, for similar total weight loss (among women, resistance training won on lean mass but not on fat). It's a retrospective cohort in which people picked their own exercise, so it's a signal rather than a verdict.
 
 ***
 
@@ -104,15 +102,25 @@ The reading didn't push me toward more Zone 2. It pushed me toward being deliber
 | Sat | Rest | |
 | Sun | Long easy run, 55' building to 65', flat, at the Poetto | average ≤ 144, max ≤ 151 |
 
-On top of that: some weekend volley matches, an hour's walk most days, and in summer, swimming in the sea.
+On top of that: some weekend volley matches, an hour's walk most days, and in summer, swimming in the sea. So the "three hours" in this post is my running budget, not my total training load, which is higher and growing with the gym.
 
-The caps are looser than a strict Zone 2 plan for a reason no paper gave me. To keep my heart rate inside Zone 2 I'd have to run between 6:30 and 7:00 per kilometre, and at that pace my running mechanics are bad enough that my knees and back pay for it. So I'd rather run between 6:00 and 6:30, even when that takes me out of Zone 2. A heart-rate zone is a target for the heart; the rest of the body gets a vote too.
+The caps are looser than a strict Zone 2 plan for a reason no paper gave me. To keep my heart rate inside Zone 2 I'd have to run between 6:30 and 7:00 per kilometre, and at that pace my running mechanics are bad enough that my knees and back pay for it. So I'd rather run between 6:00 and 6:30, even when that takes me out of Zone 2. On a bike that problem doesn't exist, so Thursday's spin session is where Zone 2 by the book fits best. A heart-rate zone is a target for the heart; the rest of the body gets a vote too.
 
-The long run moved to the flat because of the comparison above. By the VO2max papers it's my least efficient hour, and I keep it for what they don't measure: time on my feet, tendons, and durability, which in Matomäki's companion study improved as much with low intensity as with intervals. The Wednesday steady has no ceiling on purpose. The middle zone isn't evil; it just shouldn't be every run's default. In recreational runners on three to four hours a week, polarized training hasn't beaten other splits in trials so far (see Sources). Next to the evidence above, that reads to me as: you need some intensity, and past that the exact ratio matters less than the podcasts suggest. The Friday hills are that intensity.
+The long run moved to the flat because of the comparison above. By the VO2max papers it's my least efficient hour, and I keep it for what they don't measure: time on my feet, tendons, and durability (how well your physiology holds up as a long effort drags on), which in Matomäki's companion study improved as much with low intensity as with intervals. The Wednesday steady has no ceiling on purpose. The middle zone isn't evil; it just shouldn't be every run's default. In recreational runners on three to four hours a week, polarized training hasn't beaten other splits in trials so far (see Sources). Next to the evidence above, that reads to me as: you need some intensity, and past that the exact ratio matters less than the podcasts suggest. The Friday hills are that intensity.
 
 ***
 
-### How to read fitness journalism
+### Three things I'm keeping
+
+1. At low volume, intensity matters more than the label. With three hours a week, the hard sessions are the ones to protect. Turning them into more Zone 2 trades your most effective minutes for easier ones.
+2. The long easy run stays, for durability and tendons, not for anything mitochondrial.
+3. After fifty, strength isn't optional. It's the one item on this list I'm only starting now, and the best bet I've found for making sure the weight I lose is fat.
+
+The watch still buzzes on Monday if my recovery run creeps past 140. On Friday, on the hills, there's no alarm at all.
+
+***
+
+### Postscript: how to read fitness journalism
 
 Halfway through all this, I read a Healthspan article (April 2026) titled "The Real Reason VO₂ Max Declines With Age". It's built on the Capelli paper above, and its first half transcribes the numbers correctly. Then it comes apart:
 
@@ -124,14 +132,6 @@ Halfway through all this, I read a Healthspan article (April 2026) titled "The R
 I'd love to make this a story about bad popular science, but my own outline failed the same test. I drafted it with an AI assistant, and five claims in it were stronger than the data: the PI as proof of accidental threshold training, the flat-versus-hills comparison as "same effort", Capelli's muscle as nearly as limiting as the heart at my age, the muscle as "the more trainable part", which the paper never says, and my ergometer result as "peak power" from a test that stops at 150 bpm. The third is the Healthspan error almost word for word. All five pointed toward a better story.
 
 That goes a step past what I wrote about [a viral tweet on ChatGPT and creativity]({{< ref "2026-05-07-the-word-permanent-isnt-in-the-paper" >}}). The errors that survive are the ones that improve the narrative, and a model helping me write a post wants a good post exactly as much as I do. Opening the PDF is the one step where nobody is optimizing for the story.
-
-### Three things I'm keeping
-
-1. At low volume, intensity matters more than the label. With three hours a week, the hard sessions are the ones to protect. Turning them into more Zone 2 trades your most effective minutes for easier ones.
-2. The long easy run stays, for durability and tendons, not for anything mitochondrial.
-3. After fifty, strength isn't optional. It's the one item on this list I'm only starting now, and the best bet I've found for making sure the weight I lose is fat.
-
-The watch still buzzes on Monday if my recovery run creeps past 140. On Friday, on the hills, there's no alarm at all.
 
 ***
 
@@ -166,7 +166,6 @@ I wrote this with Claude as a research assistant. It found and read the papers, 
 - Capelli C, Ferretti G, di Prampero PE, Tam E. [Cardiovascular and peripheral factors affecting the decay of maximal oxygen uptake across the spectrum of age in humans](https://doi.org/10.1007/s00421-025-06031-6). *Eur J Appl Physiol*. 2026;126(3):1635-1643 (published online October 2025).
 - Mølmen KS, Almquist NW, Skattebo Ø. [Effects of exercise training on mitochondrial and capillary growth in human skeletal muscle: a systematic review and meta-regression](https://doi.org/10.1007/s40279-024-02120-2). *Sports Med*. 2025;55(1):115-144.
 - Lahav Y, Yavetz R, Gepner Y. [Resistance training as a key strategy for high-quality weight loss in men and women](https://doi.org/10.3389/fendo.2025.1725500). *Front Endocrinol*. 2026;16:1725500.
-- Baumgartner NW, Belbis MD, Noh K, et al. [Brawn and brainpower: acute resistance exercise improves behavioral and neuroelectric measures of executive function](https://doi.org/10.1111/psyp.70171). *Psychophysiology*. 2025;62(11):e70171.
 
 **My numbers and the training plan**
 
